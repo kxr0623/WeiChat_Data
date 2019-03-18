@@ -33,7 +33,7 @@ def Signature_data(users):
       return res_list
 
 def Create_wc(words_list):
-      res_path = os.path.abspath('./static/')
+      res_path = os.path.abspath('./static')
       words = ' '.join(words_list)
       back_pic = np.array(Image.open("%s/images/images.png" % res_path))
       stopwords = set(STOPWORDS)
